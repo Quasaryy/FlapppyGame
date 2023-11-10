@@ -8,33 +8,34 @@
 import SwiftUI
 
 struct TubesView: View {
-    let tubeHeight: CGFloat
+    let topTubeHeight: CGFloat
     let tubeWidth: CGFloat
-    let tubesSpacing: CGFloat
+    let tubeSpacing: CGFloat
     
     var body: some View {
         GeometryReader { geometry in
-            let availableSpace = geometry.size.height - tubesSpacing
-            let bottomTubeHeight = availableSpace - tubeHeight
+            let availableHeight = geometry.size.height - tubeSpacing
+            let bottomPipeHeight = availableHeight - topTubeHeight
+            
             VStack {
                 // Верхняя труба
                 Image(.flappeBirdPipe)
                     .resizable()
                     .rotationEffect(.degrees(180))
-                    .frame(width: tubeWidth, height: tubeHeight)
+                    .frame(width: tubeWidth, height: topTubeHeight)
                 
                 Spacer()
-                    .frame(height: tubesSpacing)
+                    .frame(height: tubeSpacing)
                 
-                // Нижняя труба
                 Image(.flappeBirdPipe)
                     .resizable()
-                    .frame(width: tubeWidth, height: bottomTubeHeight)
+                    .frame(width: tubeWidth, height: bottomPipeHeight)
             }
         }
     }
 }
 
 #Preview {
-    TubesView(tubeHeight: 300, tubeWidth: 100, tubesSpacing: 100)
+    TubesView(topTubeHeight: 300, tubeWidth: 100, tubeSpacing: 100)
 }
+

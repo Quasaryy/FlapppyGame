@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct ResultView: View {
-    let score: Int = 0
-    let highScore: Int = 0
-    let resetButtonAction: () -> Void
+    let score: Int
+    let highScore: Int
+    let resetAction: () -> Void
     
     var body: some View {
         VStack {
             Text("Game Over")
                 .font(.largeTitle)
                 .padding()
-            Text("Score \(score)")
+            Text("Score: \(score)")
                 .font(.title)
-            Text("Best \(highScore)")
+            Text("BEST: \(highScore)")
                 .padding()
-            Button("RESET", action: resetButtonAction)
+            Button("RESET", action: resetAction)
                 .padding()
                 .background(.blue)
                 .foregroundStyle(.white)
@@ -30,9 +30,10 @@ struct ResultView: View {
         }
         .background(.white.opacity(0.8))
         .clipShape(.rect(cornerRadius: 20))
+        .padding()
     }
 }
 
 #Preview {
-    ResultView(resetButtonAction: {})
+    ResultView(score: 0, highScore: 0, resetAction: {})
 }
