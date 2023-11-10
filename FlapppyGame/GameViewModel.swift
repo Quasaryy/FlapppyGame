@@ -116,4 +116,3 @@ class GameViewModel: ObservableObject {
         birdVelocity = CGVector(dx: 0, dy: jumpVelocity)
     }
 }
-

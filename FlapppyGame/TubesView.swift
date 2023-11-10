@@ -38,4 +38,3 @@ struct TubesView: View {
 #Preview {
     TubesView(topTubeHeight: 300, tubeWidth: 100, tubeSpacing: 100)
 }
-
