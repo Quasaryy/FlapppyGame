@@ -21,7 +21,7 @@ class GameViewModel: ObservableObject {
     @Published var scores = 0
     
     private let birdRadius: CGFloat = 13
-    private let pipeWidth: CGFloat = 100
+    let pipeWidth: CGFloat = 100
     private let pipeSpacing: CGFloat = 100
     private let jumpVelocity = -400
     private let gravity: CGFloat = 1000

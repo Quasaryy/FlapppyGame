@@ -12,10 +12,21 @@
 		D2B028912AF954A100DD5B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2B028902AF954A100DD5B97 /* Assets.xcassets */; };
 		D2B028942AF954A100DD5B97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2B028932AF954A100DD5B97 /* Preview Assets.xcassets */; };
 		D2B566A02AFE2C2900D08112 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B5669F2AFE2C2900D08112 /* GameViewModel.swift */; };
+		D2B566A82AFE340700D08112 /* FlapppyGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B566A72AFE340700D08112 /* FlapppyGameTests.swift */; };
 		D2E68D332AFA3084008B7FB8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E68D322AFA3084008B7FB8 /* MainView.swift */; };
 		D2E68D352AFA365D008B7FB8 /* TubesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E68D342AFA365D008B7FB8 /* TubesView.swift */; };
 		D2E68D372AFA5961008B7FB8 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E68D362AFA5961008B7FB8 /* ResultView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2B566A92AFE340700D08112 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2B028812AF954A000DD5B97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2B028882AF954A000DD5B97;
+			remoteInfo = FlapppyGame;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D2B028892AF954A000DD5B97 /* FlapppyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlapppyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +35,8 @@
 		D2B028902AF954A100DD5B97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2B028932AF954A100DD5B97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D2B5669F2AFE2C2900D08112 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		D2B566A52AFE340700D08112 /* FlapppyGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlapppyGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B566A72AFE340700D08112 /* FlapppyGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlapppyGameTests.swift; sourceTree = "<group>"; };
 		D2E68D322AFA3084008B7FB8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D2E68D342AFA365D008B7FB8 /* TubesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubesView.swift; sourceTree = "<group>"; };
 		D2E68D362AFA5961008B7FB8 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
@@ -37,6 +50,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2B566A22AFE340700D08112 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -44,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				D2B0288B2AF954A000DD5B97 /* FlapppyGame */,
+				D2B566A62AFE340700D08112 /* FlapppyGameTests */,
 				D2B0288A2AF954A000DD5B97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				D2B028892AF954A000DD5B97 /* FlapppyGame.app */,
+				D2B566A52AFE340700D08112 /* FlapppyGameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +101,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D2B566A62AFE340700D08112 /* FlapppyGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2B566A72AFE340700D08112 /* FlapppyGameTests.swift */,
+			);
+			path = FlapppyGameTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +129,24 @@
 			productReference = D2B028892AF954A000DD5B97 /* FlapppyGame.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D2B566A42AFE340700D08112 /* FlapppyGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2B566AD2AFE340700D08112 /* Build configuration list for PBXNativeTarget "FlapppyGameTests" */;
+			buildPhases = (
+				D2B566A12AFE340700D08112 /* Sources */,
+				D2B566A22AFE340700D08112 /* Frameworks */,
+				D2B566A32AFE340700D08112 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2B566AA2AFE340700D08112 /* PBXTargetDependency */,
+			);
+			name = FlapppyGameTests;
+			productName = FlapppyGameTests;
+			productReference = D2B566A52AFE340700D08112 /* FlapppyGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -111,6 +159,10 @@
 				TargetAttributes = {
 					D2B028882AF954A000DD5B97 = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					D2B566A42AFE340700D08112 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = D2B028882AF954A000DD5B97;
 					};
 				};
 			};
@@ -128,6 +180,7 @@
 			projectRoot = "";
 			targets = (
 				D2B028882AF954A000DD5B97 /* FlapppyGame */,
+				D2B566A42AFE340700D08112 /* FlapppyGameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +192,13 @@
 			files = (
 				D2B028942AF954A100DD5B97 /* Preview Assets.xcassets in Resources */,
 				D2B028912AF954A100DD5B97 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2B566A32AFE340700D08112 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +218,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2B566A12AFE340700D08112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2B566A82AFE340700D08112 /* FlapppyGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2B566AA2AFE340700D08112 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2B028882AF954A000DD5B97 /* FlapppyGame */;
+			targetProxy = D2B566A92AFE340700D08112 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D2B028952AF954A100DD5B97 /* Debug */ = {
@@ -338,6 +414,46 @@
 			};
 			name = Release;
 		};
+		D2B566AB2AFE340700D08112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H993X64HVL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yury-Lebedev.FlapppyGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlapppyGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlapppyGame";
+			};
+			name = Debug;
+		};
+		D2B566AC2AFE340700D08112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H993X64HVL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Yury-Lebedev.FlapppyGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlapppyGame.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlapppyGame";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +471,15 @@
 			buildConfigurations = (
 				D2B028982AF954A100DD5B97 /* Debug */,
 				D2B028992AF954A100DD5B97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2B566AD2AFE340700D08112 /* Build configuration list for PBXNativeTarget "FlapppyGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2B566AB2AFE340700D08112 /* Debug */,
+				D2B566AC2AFE340700D08112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
