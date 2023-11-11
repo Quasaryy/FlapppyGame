@@ -17,9 +17,9 @@
 - **IDE:** Xcode 15
 - **iOS:** 17
 - **Archetecture:** MVVM
-- **Frameworks:**  SwiftUI, Foundation
+- **Frameworks:**  SwiftUI, Foundation, XCTest
 - **Testing:**
-  - Unit Tests: XCTest
+  - Unit Tests
 
 # Начало игры
 ![Иллюстрация к проекту](https://github.com/Quasaryy/FlapppyGame/blob/main/1.png)
