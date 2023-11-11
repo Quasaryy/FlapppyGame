@@ -27,3 +27,5 @@
 # Конец игры
 ![Иллюстрация к проекту](https://github.com/Quasaryy/FlapppyGame/blob/main/2.png)
 
+# Видео
+[![Watch the video](https://img.youtube.com/vi/xg_1bF01XfE/maxresdefault.jpg)](https://youtu.be/[6dWc197ImyQ](https://youtu.be/xg_1bF01XfE))
